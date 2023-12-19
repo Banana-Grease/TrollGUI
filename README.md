@@ -1,6 +1,8 @@
 # TrollGUI
 A plugin for Minecraft (Spigot) 1.20.2
 
+Dependency for V-0.5 Onwards: ProtocolLib (BinaryIncluded)
+
 Features:
   1. "Skank Em'" - Kills the selected player
   2. "It Was A Creeper Bro!" - Spawns an explosion on the target player of sizes 5, 30, or 100

@@ -1,0 +1,10 @@
+name: PlayerTrollGUI
+version: '${project.version}'
+main: me.oscarcusick.playertrollgui.PlayerTrollGUI
+api-version: '1.20'
+depend: [ProtocolLib]
+commands:
+  TrollGUI:
+    description: "Troll the fuck out of players"
+    permission: op
+    permission-message: "You have to be an operator to troll"

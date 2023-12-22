@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TrollGUI:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TrollGUI_jar</output-path>
+    <root id="archive" name="TrollGUI.jar">
+      <element id="module-output" name="TrollGUI" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../Other/Games/Minecraft/spigot-api-1.12.2-R0.1-20180708.002800-152-shaded.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

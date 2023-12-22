@@ -143,7 +143,7 @@ public class PunishmentSelectGUIListener implements Listener {
             switch (event.getCurrentItem().getType()) {
                 case BARRIER:
                     event.getWhoClicked().closeInventory();
-                    return;
+                                        return;
                 case LIGHT_GRAY_STAINED_GLASS_PANE:
                     // do nothing
                     return;

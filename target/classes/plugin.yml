@@ -3,6 +3,8 @@ version: '0.5'
 main: me.oscarcusick.playertrollgui.PlayerTrollGUI
 api-version: '1.20'
 depend: [ProtocolLib]
+prefix: "[ TrollGUI ] "
+
 commands:
   TrollGUI:
     description: "Troll the fuck out of players"

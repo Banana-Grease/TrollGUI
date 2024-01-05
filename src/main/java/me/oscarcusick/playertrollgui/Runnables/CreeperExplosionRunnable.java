@@ -6,6 +6,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitRunnable;
 
+import java.lang.annotation.Target;
 import java.util.UUID;
 
 public class CreeperExplosionRunnable extends BukkitRunnable {
@@ -17,9 +18,11 @@ public class CreeperExplosionRunnable extends BukkitRunnable {
     }
 
         public void run() {
-            PluginInstance.getServer().getPlayer(PlayerUUID).getWorld().spawnParticle(Particle.EXPLOSION_HUGE, PluginInstance.getServer().getPlayer(PlayerUUID).getLocation(), 1);
-            PluginInstance.getServer().getPlayer(PlayerUUID).getWorld().playSound(PluginInstance.getServer().getPlayer(PlayerUUID).getLocation(), Sound.ENTITY_GENERIC_EXPLODE, 1, 1);
-            PluginInstance.getServer().getPlayer(PlayerUUID).sendHurtAnimation(0);
+            Player TargetPlayer = PluginInstance.getServer().getPlayer(PlayerUUID);
+            TargetPlayer.spawnParticle(Particle.EXPLOSION_HUGE, PluginInstance.getServer().getPlayer(PlayerUUID).getLocation(), 1);
+            TargetPlayer.playSound(TargetPlayer, Sound.ENTITY_GENERIC_EXPLODE, 1, 1);
+            TargetPlayer.sendHurtAnimation(0);
         }
+
 
 }
